@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5, #00c6ff);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.website-title {
+    margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    font-size: 1.1rem;
+    background-color: #343a40;
+}
+
+.navbar .nav-btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    color: white;
+}
+
+.navbar .nav-btn:hover {
+    transform: scale(1.05);
+    background-color: #5a5a5a;
+}
+
+.navbar .btn-light {
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar .nav-btn.active {
+    background-color: #007bff;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/* Action Buttons */
+.btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Table Styles */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.table thead {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #f8f9fa;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+}
+
+.table-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.01);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .table-img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.75rem;
+    }
+}

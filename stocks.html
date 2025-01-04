@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management - Telecom Inventory Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/stocks.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header bg-primary text-white text-center py-4 shadow-sm">
+        <h1 class="website-title">Telecom Inventory Management System</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-dark shadow-lg">
+        <div class="container d-flex justify-content-between">
+            <a href="admin.html" class="btn btn-dark text-uppercase nav-btn">Products</a>
+            <a href="suppliers.html" class="btn btn-dark text-uppercase nav-btn">Suppliers</a>
+            <a href="stocks.html" class="btn btn-dark text-uppercase nav-btn active">Stocks</a> <!-- Active button for Stocks page -->
+            <a href="user.html" class="btn btn-dark text-uppercase nav-btn">Users</a>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mt-4">
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-success me-2">Add Stock</button>
+            <button class="btn btn-warning me-2">Edit Stock</button>
+            <button class="btn btn-danger">Delete Stock</button>
+        </div>
+
+        <!-- Stock Details Table -->
+        <div class="table-responsive">
+            <table class="table table-hover table-striped align-middle shadow">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Stock Level</th>
+                        <th>Reorder Point</th>
+                        <th>Quantity</th>
+                        <th>Supplier Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Router X</td>
+                        <td>50</td>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>Supplier A</td>
+                    </tr>
+                    <!-- Add more rows as necessary -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
